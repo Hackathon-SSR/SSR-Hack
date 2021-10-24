@@ -1,17 +1,27 @@
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 function NavUser() {
+  const history = useHistory();
   return (
     <header className="header">
-      <div className="logo">SSR HACK</div>
+      <div className="logo">
+        <Link to="/home">SSR HACK</Link>
+      </div>
       <nav>
         <ul>
           <li>
             <Link to="/uprofile">Profile</Link>
           </li>
           <li>
-            <button>Logout</button>
+            <button
+              onClick={() => {
+                history.push("/");
+              }}
+            >
+              Logout
+            </button>
           </li>
         </ul>
       </nav>

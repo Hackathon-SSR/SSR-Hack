@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Saima Ansari",
+      "dob": "10/01/2002",
+      "dpt": "Computer",
+      "number": "8393005545",
+      "VName": "Cova",
+      "Fdose": "hfhhfhf",
+      "Sdose": "shshshs",
+      "Ctest": "gdgdggd",
+      "ex": "hshsh",
+      "apvl": "YES"
+    },
+    {
+        "id": 2,
+        "name": "Sufiya Sayyed",
+        "dob": "21/07/2001",
+        "dpt": "Computer",
+        "number": "9999999545",
+        "VName": "CovaS",
+        "Fdose": "hfhshshhshshf",
+        "Sdose": "sshssuusuushs",
+        "Ctest": "gsusuuauad",
+        "ex": "hshshtryr",
+        "apvl": "NO"   
+    }
+]

@@ -4,7 +4,8 @@ import { Personal_Info } from "./stepForm/Personal_Info";
 import { Vaccine_Info } from "./stepForm/Vaccine_Info";
 import { Employee_Info } from "./stepForm/Employee_Info";
 import { Review } from "./stepForm/Review";
-import { Submit } from "./stepForm/Submit";
+// import { Submit } from "./stepForm/Submit";
+import NavUser from "../navbar/NavUser";
 
 const defaultData = {
   firstName: "",
@@ -32,20 +33,34 @@ export const MultiStepForm = () => {
 
   switch (step.id) {
     case "Personal_Info":
-      return <Personal_Info {...props} />;
+      return (
+        <>
+          <NavUser />
+          <Personal_Info {...props} />
+        </>
+      );
     case "Vaccine_Info":
-      return <Vaccine_Info {...props} />;
+      return (
+        <>
+          <NavUser />
+          <Vaccine_Info {...props} />
+        </>
+      );
     case "Employee_Info":
-      return <Employee_Info {...props} />;
+      return (
+        <>
+          <NavUser />
+          <Employee_Info {...props} />
+        </>
+      );
     case "review":
-      return <Review {...props} />;
-    case "submit":
-      return <Submit {...props} />;
+      return (
+        <>
+          <NavUser />
+          <Review {...props} />
+        </>
+      );
   }
 
-  return (
-    <div>
-      <h1>Multi step form</h1>
-    </div>
-  );
+  return <div></div>;
 };

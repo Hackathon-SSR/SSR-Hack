@@ -6,7 +6,7 @@ import AdminAuth from "./components/login/AdminAuth";
 import NavLogin from "./components/navbar/NavLogin";
 import EmpHome from "./pages/emp/EmpHome";
 import { MultiStepForm } from "./components/form/MultiStepForm";
-
+import BasicTable from "./components/roaster/BasicTable";
 
 function App() {
   const [user, setUserLogin] = useState({});
@@ -22,9 +22,15 @@ function App() {
           <AdminAuth />
         </Route>
         {/* <Route path="/user">{user && user._id && <EmpHome />}</Route> */}
-        <Route path="/home"><EmpHome /></Route>
-        <Route path="/form"><MultiStepForm /></Route>
-        
+        <Route path="/home">
+          <EmpHome />
+        </Route>
+        <Route path="/uprofile">
+          <MultiStepForm />
+        </Route>
+        <Route path="/roaster">
+          <BasicTable />
+        </Route>
       </Switch>
     </>
   );
