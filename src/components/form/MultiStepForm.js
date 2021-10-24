@@ -6,6 +6,7 @@ import { Employee_Info } from "./stepForm/Employee_Info";
 import { Review } from "./stepForm/Review";
 // import { Submit } from "./stepForm/Submit";
 import NavUser from "../navbar/NavUser";
+import "./form.css";
 
 const defaultData = {
   firstName: "",
@@ -36,28 +37,36 @@ export const MultiStepForm = () => {
       return (
         <>
           <NavUser />
-          <Personal_Info {...props} />
+          <div className="form">
+            <Personal_Info {...props} />
+          </div>
         </>
       );
     case "Vaccine_Info":
       return (
         <>
           <NavUser />
-          <Vaccine_Info {...props} />
+          <div className="form">
+            <Vaccine_Info {...props} />
+          </div>
         </>
       );
     case "Employee_Info":
       return (
         <>
           <NavUser />
-          <Employee_Info {...props} />
+          <div className="form">
+            <Employee_Info {...props} />
+          </div>
         </>
       );
     case "review":
       return (
         <>
           <NavUser />
-          <Review {...props} />
+          <div className="form1">
+            <Review {...props} />
+          </div>
         </>
       );
   }

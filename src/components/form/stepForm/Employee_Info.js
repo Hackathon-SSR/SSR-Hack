@@ -10,7 +10,7 @@ export const Employee_Info = ({ formData, setForm, navigation }) => {
     <Container maxWidth="xs">
       <h3>Department</h3>
       <TextField
-        label="Dept"
+        label="Department"
         name="dept"
         value={dept}
         onChange={setForm}
