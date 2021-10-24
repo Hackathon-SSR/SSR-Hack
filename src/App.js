@@ -5,6 +5,8 @@ import UserAuth from "./components/login/UserAuth";
 import AdminAuth from "./components/login/AdminAuth";
 import NavLogin from "./components/navbar/NavLogin";
 import EmpHome from "./pages/emp/EmpHome";
+import { MultiStepForm } from "./components/form/MultiStepForm";
+
 
 function App() {
   const [user, setUserLogin] = useState({});
@@ -19,7 +21,10 @@ function App() {
           <NavLogin />
           <AdminAuth />
         </Route>
-        <Route path="/user">{user && user._id && <EmpHome />}</Route>
+        {/* <Route path="/user">{user && user._id && <EmpHome />}</Route> */}
+        <Route path="/home"><EmpHome /></Route>
+        <Route path="/form"><MultiStepForm /></Route>
+        
       </Switch>
     </>
   );
