@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 import Accordion from '@material-ui/core/Accordion';
@@ -12,6 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 import EditIcon from '@material-ui/icons/Edit';
 
 export const Review = ({ formData, navigation }) => {
+  const history = useHistory();
   const { go } = navigation;
   const {
     firstName,
@@ -49,7 +51,7 @@ export const Review = ({ formData, navigation }) => {
         color="primary"
         variant="contained"
         style={{ marginTop: '1.5rem' }}
-        onClick={() => go('submit')}
+        onClick={() => history.push('/home')}
       >
         Submit
       </Button>
