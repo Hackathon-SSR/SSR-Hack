@@ -6,3 +6,26 @@
   font-family: "DM Sans";
   box-sizing: border-box;
 }
+
+h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+img {
+  width: 50%;
+  float: left;
+  margin-right: 5px;
+  margin-top: 75px;
+  margin-left: 50px;
+}
+
+p {
+  text-align:center;
+  margin-right: 5px;
+  margin-top: 180px;
+  margin-left: 50px;
+  line-height: 30px;
+  font-size: large;
+}
+

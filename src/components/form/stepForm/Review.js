@@ -42,7 +42,7 @@ export const Review = ({ formData, navigation }) => {
         { 'Department': dept },
         { 'Employee ID': empid },
       ]} />
-      <RenderAccordion summary="Vaccine Infpo" go={ go } details={[
+      <RenderAccordion summary="Vaccine Info" go={ go } details={[
         { 'Vaccine Name': vac_name },
         { 'First Dose': first_dose },
         { 'Second Dose': second_dose },

@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 export const Employee_Info = ({ formData, setForm, navigation }) => {
   const { dept, empid } = formData;
 
+  
   return (
     <Container maxWidth="xs">
       <h3>Department</h3>
