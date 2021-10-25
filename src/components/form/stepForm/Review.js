@@ -29,30 +29,10 @@ export const Review = ({ formData, navigation }) => {
   } = formData;
 
   return (
-<<<<<<< HEAD
-    <Container maxWidth='sm'>
-      <h3>Review</h3>
-      <RenderAccordion summary="Personal Info" go={ go } details={[
-        { 'First Name': firstName },
-        { 'Last Name': lastName },
-        { 'DoB': dob },
-        { 'Email': email },
-        { 'Phone': phone },
-      ]} />
-      <RenderAccordion summary="Employee Info" go={ go } details={[
-        { 'Department': dept },
-        { 'Employee ID': empid },
-      ]} />
-      <RenderAccordion summary="Vaccine Info" go={ go } details={[
-        { 'Vaccine Name': vac_name },
-        { 'First Dose': first_dose },
-        { 'Second Dose': second_dose },
-      ]} />
-=======
     <Container maxWidth="sm">
-      <h3 style={{ margin: "10px 0px" }}>Review</h3>
+      <h3>Review</h3>
       <RenderAccordion
-        summary="Personal Info"
+        summary="Personal_Info"
         go={go}
         details={[
           { "First Name": firstName },
@@ -63,12 +43,12 @@ export const Review = ({ formData, navigation }) => {
         ]}
       />
       <RenderAccordion
-        summary="Employee Info"
+        summary="Employee_Info"
         go={go}
         details={[{ Department: dept }, { "Employee ID": empid }]}
       />
       <RenderAccordion
-        summary="Vaccine Info"
+        summary="Vaccine_Info"
         go={go}
         details={[
           { "Vaccine Name": vac_name },
@@ -76,7 +56,6 @@ export const Review = ({ formData, navigation }) => {
           { "Second Dose": second_dose },
         ]}
       />
->>>>>>> f0f3269d96433e862604e99be3d33d44f1f68b6d
       <Button
         color="primary"
         variant="contained"
@@ -107,7 +86,7 @@ export const RenderAccordion = ({ summary, details, go }) => (
         <IconButton
           color="primary"
           component="span"
-          onClick={() => go(`${summary.toLowerCase()}`)}
+          onClick={() => go(`${summary}`)}
         >
           <EditIcon />
         </IconButton>

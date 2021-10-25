@@ -8,7 +8,7 @@ function NavAdmin() {
   return (
     <header className="header">
       <div className="logo">
-        <Link to="/home">SSR HACK</Link>
+        <Link to="/ahome">SSR HACK</Link>
       </div>
       <nav>
         <ul>

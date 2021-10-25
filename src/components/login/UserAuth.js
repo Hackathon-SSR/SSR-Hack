@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import "./Login.css";
 
 function UserAuth({ setUserLogin }) {
@@ -19,12 +19,7 @@ function UserAuth({ setUserLogin }) {
   };
 
   const handlelogin = (e) => {
-    // e.preventDefaults();
-    axios.post("http://localhost:9004/login", user).then((res) => {
-      // alert(res.data.message);
-      setUserLogin(res.data.user);
-      history.push("/user");
-    });
+    history.push("/home");
   };
 
   return (
