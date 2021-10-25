@@ -7,7 +7,7 @@ export const Vaccine_Info = ({ formData, setForm, navigation }) => {
   const { vac_name, first_dose, second_dose } = formData;
   return (
     <Container maxWidth="xs">
-      <h3>Vaccine Name</h3>
+      <h3>Vaccination Details</h3>
       <TextField
         label="Vaccine Name"
         name="vac_name"
