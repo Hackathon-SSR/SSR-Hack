@@ -41,14 +41,14 @@
   padding: 0.25rem;
 }
 
-.actions {
+.actionsss {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.actions button {
+.actionsss button {
   cursor: pointer;
   font: inherit;
 
@@ -61,7 +61,7 @@
   padding: 0.5rem 2.5rem;
 }
 
-.actions button:hover {
+.actionsss button:hover {
   /* background-color: #873abb;
     border-color: #873abb; */
   background-color: white;
@@ -70,7 +70,7 @@
   color: orange;
 }
 
-.actions .toggle {
+.actionsss .toggle {
   margin-top: 1rem;
   background-color: transparent;
   /* color: #9f5ccc; */
@@ -80,7 +80,7 @@
   padding: 0.15rem 1.5rem;
 }
 
-.actions .toggle:hover {
+.actionsss .toggle:hover {
   background-color: transparent;
   /* color: #ae82cc; */
   color: white;

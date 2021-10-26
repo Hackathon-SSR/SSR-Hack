@@ -29,7 +29,7 @@ function BasicTable() {
       >
         Roaster
       </h1>
-      <table {...getTableProps()}>
+      <table {...getTableProps()} className="btable">
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>

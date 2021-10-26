@@ -13,6 +13,9 @@ function NavAdmin() {
       <nav>
         <ul>
           <li>
+            <Link to="/pending-approval">Pending Approvals</Link>
+          </li>
+          <li>
             <Link to="/roaster">Roaster</Link>
           </li>
           <li>

@@ -46,7 +46,7 @@ function UserAuth() {
             placeholder="Enter your password"
           />
         </div>
-        <div className="actions">
+        <div className="actionsss">
           <button onClick={handlelogin}>Login</button>
           <button
             className="toggle"

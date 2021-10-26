@@ -6,27 +6,3 @@
   font-family: "DM Sans";
   box-sizing: border-box;
 }
-
-.container-about h1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  text-align: center;
-}
-
-.container-about img {
-  width: 50%;
-  float: left;
-  margin-right: 5px;
-  margin-top: 75px;
-  margin-left: 50px;
-}
-
-.container-about p {
-  margin-right: 5px;
-  margin-top: 180px;
-  margin-left: 50px;
-  line-height: 30px;
-  font-size: large;
-  padding: 10px;
-  text-align: justify;
-}

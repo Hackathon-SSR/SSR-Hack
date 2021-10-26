@@ -12,7 +12,7 @@ function NavUser() {
       <nav>
         <ul>
           <li>
-            <Link to="/uprofile">Approval</Link>
+            <Link to="/approval">Approval</Link>
           </li>
           <li>
             <Link to="/uprofile">Profile</Link>

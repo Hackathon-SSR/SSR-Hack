@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aform {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.aform h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+#form-label {
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 0px;
+  font-weight: bold;
+}
+
+.aform input[type="date"] {
+  height: 40px;
+  padding: 10px;
+}
+
+.mobut {
+  width: 150px;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  font-size: large;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mobut:hover {
+  background-color: #45a049;
+}

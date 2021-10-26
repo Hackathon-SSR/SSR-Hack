@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Saima Ansari",
+    "d1": "Monday",
+    "d2": "Wednesday",
+    "d3": "Thursday"
+  },
+  {
+    "id": 2,
+    "name": "Sufiya Sayyed",
+    "d1": "Tuesday",
+    "d2": "Wednesday",
+    "d3": "Friday"
+  },
+  {
+    "id": 3,
+    "name": "Rohit James",
+    "d1": "Tuesday",
+    "d2": "Wednesday",
+    "d3": "Friday"
+  }
+]

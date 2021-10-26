@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Route, Switch } from "react-router";
 import "./App.css";
 import UserAuth from "./components/login/UserAuth";
@@ -8,9 +7,10 @@ import EmpHome from "./pages/emp/EmpHome";
 import { MultiStepForm } from "./components/form/MultiStepForm";
 import BasicTable from "./components/roaster/BasicTable";
 import AdminHome from "./pages/admin/AdminHome";
+import ApTable from "./components/approval/ApTable";
+import Approval from "./components/eapproval/Approval";
 
 function App() {
-  const [user, setUserLogin] = useState({});
   return (
     <>
       <Switch>
@@ -25,6 +25,12 @@ function App() {
         </Route>
         <Route exact path="/roaster">
           <BasicTable />
+        </Route>
+        <Route exact path="/pending-approval">
+          <ApTable />
+        </Route>
+        <Route exact path="/approval">
+          <Approval />
         </Route>
         <Route exact path="/">
           <NavLogin />

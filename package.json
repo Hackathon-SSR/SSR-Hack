@@ -13,6 +13,7 @@
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.17.5",
     "react-hooks-helper": "^1.6.0",
+    "react-modal": "^3.14.3",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-table": "^7.7.0",

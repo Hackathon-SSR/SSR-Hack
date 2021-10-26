@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "react-modal";
 import { useHistory } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
@@ -13,6 +14,7 @@ import IconButton from "@material-ui/core/IconButton";
 import EditIcon from "@material-ui/icons/Edit";
 
 export const Review = ({ formData, navigation }) => {
+  const [formIsOpen, setFormIsOpen] = useState(false);
   const history = useHistory();
   const { go } = navigation;
   const {
@@ -60,10 +62,34 @@ export const Review = ({ formData, navigation }) => {
         color="primary"
         variant="contained"
         style={{ marginTop: "1.5rem" }}
-        onClick={() => history.push("/home")}
+        // onClick={() => history.push("/home")}
+        onClick={() => setFormIsOpen(true)}
       >
         Submit
       </Button>
+      <Modal
+        className="modal"
+        isOpen={formIsOpen}
+        shouldCloseOnOverlayClick={false}
+        onRequestClose={() => setFormIsOpen(false)}
+        style={{
+          overlay: {
+            backgroundColor: "grey",
+          },
+          content: {
+            textAlign: "center",
+          },
+        }}
+      >
+        <h2 style={{ marginTop: "10px" }}>
+          Form has been submitted, redirecting back to the homepage
+        </h2>
+        <div>
+          <button className="actionss" onClick={() => history.push("/home")}>
+            Close
+          </button>
+        </div>
+      </Modal>
     </Container>
   );
 };
