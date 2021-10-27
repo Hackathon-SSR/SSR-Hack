@@ -11,7 +11,7 @@ function AdminHome() {
         <h1>About the Website</h1>
         <img src={homepage} alt="People working in office" />
         <p>
-          This application/website is made for easy communication between
+          This website is made for easy communication between
           employees during the pandemic and post pandemic scenario.
           <br />
           With the offices reopening and employees returning back to work, we

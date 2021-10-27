@@ -36,10 +36,6 @@ export const COLUMNS = [
     accessor: "Ctest",
   },
   {
-    Header: "Excemption",
-    accessor: "ex",
-  },
-  {
     Header: "Approval",
     accessor: "apvl",
   },

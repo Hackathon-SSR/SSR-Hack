@@ -1,23 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Saima Ansari",
-    "d1": "Monday",
-    "d2": "Wednesday",
-    "d3": "Thursday"
+    "name": "Lee Kim",
+    "d1": "27/10/2021",
+    "d2": "28/10/2021",
+    "d3": "29/10/2021"
   },
   {
     "id": 2,
-    "name": "Sufiya Sayyed",
-    "d1": "Tuesday",
-    "d2": "Wednesday",
-    "d3": "Friday"
+    "name": "Alina Kulkarni",
+    "d1": "27/10/2021",
+    "d2": "28/10/2021",
+    "d3": "29/10/2021"
   },
   {
     "id": 3,
-    "name": "Rohit James",
-    "d1": "Tuesday",
-    "d2": "Wednesday",
-    "d3": "Friday"
+    "name": "Rohini James",
+    "d1": "27/10/2021",
+    "d2": "28/10/2021",
+    "d3": "29/10/2021"
+  },
+  {
+    "id": 4,
+    "name": "Akhil Shaji",
+    "d1": "11/01/2021",
+    "d2": "11/03/2021",
+    "d3": "11/05/2021"
   }
 ]
